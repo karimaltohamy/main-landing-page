@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Landing Project</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/carsosuel.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -29,12 +29,12 @@
               <img src="./images/logo.png" alt="logo" loading="lazy" />
             </a>
             <div class="links">
-              <a href="index.html" class="link active">Home</a>
-              <a href="about-us.html" class="link">who are we</a>
-              <a href="our-services.html" class="link">Our Services</a>
-              <a href="Portfolio.html" class="link">Portfolio</a>
-              <a href="blog.html" class="link">Blog</a>
-              <a href="contact-us.html" class="link">Contact</a>
+              <a href="#home" class="link active">Home</a>
+              <a href="#about" class="link">who are we</a>
+              <a href="#services" class="link">Our Services</a>
+              <a href="#whyChooseUs" class="link">Why Choose Us</a>
+              <a href="#ourPricing" class="link">Our Pricing</a>
+              <a href="#contact" class="link">Contact</a>
             </div>
             <div class="info">
               <a href="#" class="lang">
@@ -42,7 +42,7 @@
                 <span>عربي</span>
               </a>
 
-              <a href="contact-us.html" class="btn_solid"> Start your trip </a>
+              <a href="#contact" class="btn_solid"> Start your trip </a>
 
               <div class="icon_menu">
                 <svg
@@ -69,8 +69,33 @@
       </header>
       <!-- end header -->
 
+      <!-- start menu mobile -->
+      <div class="overflow"></div>
+      <div class="menu_mobile">
+        <div class="head">
+          <img src="./images/logo.png" alt="logo" loading="lazy" />
+
+          <div class="btn_close_menu">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+        </div>
+        <div class="links">
+              <a href="#home" class="link active">Home</a>
+              <a href="#about" class="link">who are we</a>
+              <a href="#services" class="link">Our Services</a>
+              <a href="#whyChooseUs" class="link">Why Choose Us</a>
+              <a href="#ourPricing" class="link">Our Pricing</a>
+              <a href="#contact" class="link">Contact</a>
+        </div>
+        <a href="#" class="lang">
+          <img src="images/arabic.svg" alt="lang-img" loading="lazy" />
+          <span>عربي</span>
+        </a>
+      </div>
+      <!-- end menu mobile -->
+
       <!-- start hero -->
-      <div class="hero_section">
+      <div class="hero_section" id="home">
         <div class="container">
           <div class="line line_section">
             <div
@@ -123,7 +148,7 @@
     </main>
 
     <!-- start about us -->
-    <div class="about_us_section">
+    <div class="about_us_section" id="about">
         <div class="container">
             <div class="line line_section">
                 <div class="text">
@@ -148,7 +173,7 @@ Escorpion combines the latest technologies and expertise in the world with a hig
     <!-- end about us -->
 
     <!-- start our services -->
-    <div class="our_services_section section">
+    <div class="our_services_section section" id="services">
         <div class="container">
             <div class="head text-center">
                 <div class="subtitle">Our Services</div>
@@ -284,11 +309,11 @@ Escorpion combines the latest technologies and expertise in the world with a hig
     <!-- end our services -->
 
     <!-- start about us -->
-    <div class="about_us_section bg_dark">
+    <div class="about_us_section bg_dark" id="whyChooseUs">
         <div class="container">
             <div class="line line_section">
                 <div class="image">
-                    <img src="./images/about-2.png" alt="about" loading="lazy">
+                    <img src="./images/about-3.png" alt="about" loading="lazy">
                 </div>
                 <div class="text">
                     <div class="subtitle">Why Choose Us</div>
@@ -321,9 +346,354 @@ Scorpion always puts the quality of service in priority, but it has not forgotte
     </div>
     <!-- end about us -->
 
+    <!-- start our pricing -->
+    <div class="our_pricing">
+        <div class="container">
+            <div class="line line_section">
+                <div class="text">
+                    <h3 class="title">
+                        Just take a look at our <span>Internet plans</span> and pick which is better for your needs
+                    </h3>
+                    <div class="image">
+                        <img src="./images/about-2.png" alt="img" loading="lazy">
+                    </div>
+                </div>
+                <div class="boxs">
+                    <div class="box">
+                        <h4 class="size">100 Mbps</h4>
+                        <p class="desc">You will enjoy a download speed of 256 KB per second after completing the available download capacity</p>
+                        <div class="support"><i class="fa-solid fa-headset"></i> 24/7 technical support</div>
+                        <span class="price">$19.99 <i>/mo</i></span>
+                        <a href="#" class="btn_get">Get Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="box active" >
+                        <h4 class="size">300 Mbps</h4>
+                        <p class="desc">You will enjoy a download speed of 256 KB per second after completing the available download capacity</p>
+                        <div class="support"><i class="fa-solid fa-headset"></i> 24/7 technical support</div>
+                        <span class="price">$40.99 <i>/mo</i></span>
+                        <a href="#" class="btn_get">Get Details <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="most_plane">
+                            <h5>MOST POPULAR</h5>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h4 class="size">600 Mbps</h4>
+                        <p class="desc">You will enjoy a download speed of 256 KB per second after completing the available download capacity</p>
+                        <div class="support"><i class="fa-solid fa-headset"></i> 24/7 technical support</div>
+                        <span class="price">$80.99 <i>/mo</i></span>
+                        <a href="#" class="btn_get">Get Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end our pricing -->
+
+    <!-- start trust us -->
+      <div class="trust_us">
+        <div class="container">
+          <div class="line">
+            <div class="left">
+              <h2 class="title">What our <span>awesome customers</span> say</h2>
+              <p class="desc">The speeds are consistently fast, even during peak times when everyone is online. We offer the fastest Gigabit network available.</p>
+
+            </div>
+            <div class="right">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                      <p class="desc">
+                        “I think Educrat is the best theme I ever seen this
+                        year. Amazing design, easy to customize and a design
+                        quality superlative account on its cloud platform for
+                        the optimized performance”
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card.png" alt="" />
+                        <div class="text">
+                          <h5>Courtney</h5>
+                          <span>Web Designer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                       <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                      <p class="desc">
+                        “I think Educrat is the best theme I ever seen this
+                        year. Amazing design, easy to customize and a design
+                        quality superlative account on its cloud platform for
+                        the optimized performance”
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card2.png" alt="" />
+                        <div class="text">
+                          <h5>Courtney</h5>
+                          <span>Web Designer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                       <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                      <p class="desc">
+                        “I think Educrat is the best theme I ever seen this
+                        year. Amazing design, easy to customize and a design
+                        quality superlative account on its cloud platform for
+                        the optimized performance”
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card.png" alt="" />
+                        <div class="text">
+                          <h5>Courtney</h5>
+                          <span>Web Designer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                       <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                      <p class="desc">
+                        “I think Educrat is the best theme I ever seen this
+                        year. Amazing design, easy to customize and a design
+                        quality superlative account on its cloud platform for
+                        the optimized performance”
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card2.png" alt="" />
+                        <div class="text">
+                          <h5>Courtney</h5>
+                          <span>Web Designer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                       <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                      <p class="desc">
+                        “I think Educrat is the best theme I ever seen this
+                        year. Amazing design, easy to customize and a design
+                        quality superlative account on its cloud platform for
+                        the optimized performance”
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card.png" alt="" />
+                        <div class="text">
+                          <h5>Courtney</h5>
+                          <span>Web Designer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                       <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                      <p class="desc">
+                        “I think Educrat is the best theme I ever seen this
+                        year. Amazing design, easy to customize and a design
+                        quality superlative account on its cloud platform for
+                        the optimized performance”
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card2.png" alt="" />
+                        <div class="text">
+                          <h5>Courtney</h5>
+                          <span>Web Designer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                       <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                      <p class="desc">
+                        “I think Educrat is the best theme I ever seen this
+                        year. Amazing design, easy to customize and a design
+                        quality superlative account on its cloud platform for
+                        the optimized performance”
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card.png" alt="" />
+                        <div class="text">
+                          <h5>Courtney</h5>
+                          <span>Web Designer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                       <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                      <p class="desc">
+                        “I think Educrat is the best theme I ever seen this
+                        year. Amazing design, easy to customize and a design
+                        quality superlative account on its cloud platform for
+                        the optimized performance”
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card2.png" alt="" />
+                        <div class="text">
+                          <h5>Courtney</h5>
+                          <span>Web Designer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end trust us -->
+
+     <!-- start footer -->
+      <footer id="contact">
+        <div class="container">
+          <div class="row line">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="logo">
+                <img src="images/logo.png" alt="logo" loading="lazy" />
+              </div>
+              <p class="desc">Get 26,000+ best online courses from us</p>
+              <div class="social_media">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+              <div class="links">
+                <h4 class="title_links">Explore</h4>
+                <ul class="user-links">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About us</a></li>
+                  <li><a href="#services">Our services</a></li>
+                  <li><a href="#whyChooseUs">Why Choose us</a></li>
+                  <li><a href="#contact">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+              <div class="links">
+                <h4 class="title_links">Links</h4>
+                <ul class="user-links">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Instructor</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Instructor Profile</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <h4 class="title_links">Contact</h4>
+              <div class="info_item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+92 (0088) 6823</span>
+              </div>
+              <div class="info_item">
+                <i class="fa-solid fa-message"></i>
+                <span>needhelp@company.com</span>
+              </div>
+              <div class="info_item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span> 80 Broklyn Golden Street. New York. USA</span>
+              </div>
+
+              <div class="input_item">
+                <input type="text" placeholder="Email Address" />
+                <button>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="copy_right">© Copyright 2022 by 5Code Company</p>
+        </div>
+      </footer>
+      <!-- start footer -->
+
+
+      <script src="js/main.js"></script>
+      <script src="js/swiper.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
   </body>
 </html>
