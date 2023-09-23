@@ -664,13 +664,13 @@ footer .copy_right {
     margin: auto;
     padding: 5px 10px;
     font-size: 13px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
   .hero_section .container .line .text .title {
-    font-size: 30px;
+    font-size: 28px;
   }
   .hero_section .container .line .text .desc {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 10px;
   }
   .hero_section .container .line .text .btns {
